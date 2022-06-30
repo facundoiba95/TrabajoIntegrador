@@ -26,6 +26,16 @@
     gap: 8px;
 }
 @media (max-width:426px) {
+    /*MODIFICO LA SEARCH BAR DE HEADER*/
+    .fa-solid.fa-magnifying-glass{
+        display: none;
+    }
+    /****************/
+      /* MODIFICO EL LOGO DEL HEADER*/
+      .logo-header{
+        width: 100px;
+    }
+   /**************/
     #btnHamburguesa{
         display: none;
     }
@@ -96,19 +106,4 @@
 
 
     
-}
-@media (max-width:376px) {
-    /* MODIFICO EL LOGO DEL HEADER*/
-    .logo-header{
-        width: 100px;
-    }
-   /**************/
-    /* ACA MODIFICO LA SEARCH BAR DEL HEADER*/
-    .fa-solid.fa-magnifying-glass{
-        display: none;
-    }
-    
-    
-
-    /******************/
 }
