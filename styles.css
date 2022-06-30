@@ -8,10 +8,13 @@
 }
 .contacto-header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
     background-color: red;
+    height: 70px;
+    padding: 0 8px;
+
 }
 .redes{
     display: flex;
@@ -34,6 +37,7 @@
       /* MODIFICO EL LOGO DEL HEADER*/
       .logo-header{
         width: 100px;
+        height: 50%;
     }
    /**************/
     #btnHamburguesa{
@@ -44,6 +48,13 @@
     }
     .btnHamburguesa{
         position: relative;
+    }
+    .fa-solid.fa-bars{
+        font-size:2rem;
+    }
+    .search-bar input{
+        
+        height: 30px;
     }
     .menu{
         position: absolute;
@@ -59,7 +70,7 @@
         display: flex;
         flex-direction: column;
         left:0; 
-        top:39px;    
+        top:70px;    
     }
     .menu-item.infousuario{
         padding:40px;
@@ -107,3 +118,8 @@
 
     
 }
+@media (max-width:376px){
+    /*MODIFICO SEARCH BAR HEADER*/
+  
+}
+
