@@ -15,6 +15,9 @@
     background-color: black;
     height: 70px;
     padding: 0 8px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
 
 }
 .redes{
@@ -68,6 +71,8 @@
         list-style: none;
         border-bottom: 1px solid gray;
         width: 100%;
+        z-index: 999;
+        background-color: white;
     }
     .menu-link{
         text-decoration: none;
@@ -119,6 +124,52 @@
         font-size: 1.8rem;
         text-align: center;
     }
+
+    /* EMPIEZO SLIDER PRODUCTOS*/
+    .sliderProductos{
+        overflow: hidden;
+        width: 100%;
+    }
+    .sliderProductos img{
+        width: 100%;
+        height: 70%;
+        
+        
+    }
+    .sliderProductos ul{
+        background-color: rgb(139, 203, 12);
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 500%;
+        animation: cambioimagen 15s infinite alternate;
+       
+    }
+    .sliderProductos li{
+        width: 100%;
+    } 
+    
+    @keyframes cambioimagen {
+        0%{ margin-left:0;}
+        15%{ margin-left:0}
+
+        20%{margin-left:-100%}
+        35%{margin-left: -100%;}
+
+        40%{margin-left:-200%}
+        55%{margin-left: -200%;}
+
+        60%{margin-left:-300%}
+        75%{margin-left: -300%;}
+
+        80%{margin-left:-400%}
+        100%{margin-left: -400%;}
+
+      
+
+    }
+
+
 
 
 
