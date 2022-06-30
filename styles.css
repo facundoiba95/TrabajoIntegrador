@@ -53,6 +53,7 @@
     }
     .menu-item.infousuario{
         padding:40px;
+        gap:20px;
     }
     .infousuario{
         display: flex;
@@ -79,10 +80,35 @@
     .menu-item{
         padding:10px;
         border: 1px solid red;
+        font-size: 1.4rem;
+        
+    }
+    .fa-solid.fa-ellipsis-vertical, .fa-solid.fa-star, .fa-solid.fa-tag, .fa-solid.fa-house-chimney{
+        
+        height: 100%;
+        width: 40px;
+        font-size: 1.8rem;
+        text-align: center;
     }
 
 
 
 
+
     
+}
+@media (max-width:376px) {
+    /* MODIFICO EL LOGO DEL HEADER*/
+    .logo-header{
+        width: 100px;
+    }
+   /**************/
+    /* ACA MODIFICO LA SEARCH BAR DEL HEADER*/
+    .fa-solid.fa-magnifying-glass{
+        display: none;
+    }
+    
+    
+
+    /******************/
 }
