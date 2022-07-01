@@ -245,18 +245,19 @@
 
     /* EMPIEZA OFFSALE CONTAINER*/
      .offsale-container{
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
      }
     .offsale-title{
         margin:0 auto;
-        width:80%;
+        width: 80%;
     }
      .offsale-container h3{
         text-align: center;
         font-size: 1.4rem;
         font-weight: 900;
-        animation:  bounceIn 2s infinite alternate-reverse ease-in-out;
+        animation:  pulse 2s infinite alternate-reverse ease-in-out;
      }
     
      .offsale-link img{
@@ -279,6 +280,29 @@
         text-decoration:line-through;
         color: red;
      }
+     /***********************/
+
+     /* EMPIEZO CON CATEGORY CONTAINER*/
+     .category-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .categories-link img{
+        background-color:rgb(139, 203, 12);
+        border-radius: 50%;
+        width: 80%;
+        height: 250px;
+        object-fit: contain;
+
+     }
+     .categories{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+
      
      
     
