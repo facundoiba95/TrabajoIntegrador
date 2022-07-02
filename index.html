@@ -29,23 +29,54 @@
             <input type="checkbox" name="btnHamburguesa" id="btnHamburguesa">
             <ul class="menu">
                 <li class="menu-item infousuario">
-                    <div class="child-one">
-                        <i class="fa-solid fa-user"></i>
-                        <div class="infocuenta">
-                            <h3>Bienvenido</h3>
-                            <p>Ingresa a tu cuenta para ver tus compras, favoritos, etc.</p>
+                    <div class="home">
+                        <h3>Bienvenido</h3>
+                        <p>Ingresa a tu cuenta para ver tus compras, favoritos, etc.</p>
+                        <div class="buttons-infousuario">
+                            <button type="button" class="btnUser"><a href="#login">Ingresá</a></button>
+                            <button type="button" class="btnUser"><a href="#register">Creá tu cuenta</a></button>
                         </div>
                     </div>
-                    
-                    <div class="buttons-infousuario">
-                        <button type="button" class="btnUser"><a href="#">Ingresá</a></button>
-                        <button type="button" class="btnUser"><a href="#">Creá tu cuenta</a></button>
+                    <div class="login" id="login">
+                        <h3>Bienvenido!</h3>
+                        <h5>Ingresa tu usuario y contraseña para continuar</h5>
+                        <form>
+                            <label for="user">User: </label>
+                            <input type="text" id="user" placeholder="Usuario">
+                            <label for="password">Password: </label>
+                            <input type="password"id="password" placeholder="Contraseña">
+                            <a href="index.html"><input type="submit" value="Iniciar sesión"></a>
+                            
+                        </form>
+
                     </div>
+                    <div class="register" id="register">
+                        <h3>Bienvenido a eShopCBA!</h3>
+                        <h5>Ingresa los siguientes datos para crear tu cuenta</h5>
+                        <form>
+                            
+                            <input type="text" id="name" placeholder="Nombre y apellido"/>
+
+                           
+                            <input type="email" id="email" placeholder="Email">
+
+                            
+                            <input type="text" id="newuser" placeholder="Usuario">
+
+                           
+                            <input type="newpassword" id="newpassword" placeholder="Contraseña">
+
+                            <a href="index.html"><input type="submit" href="index.html" value="Registrarme"></a>
+                        </form>
+
+                    </div>
+                    
+                    
                 </li>
-                <li class="menu-item"><a href="#" class="menu-link"><i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
-                <li class="menu-item"><a href="#" class="menu-link"><i class="fa-solid fa-tag"></i> Ofertas</a></li>
+                <li class="menu-item"><a href="index.html" class="menu-link"><i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+                <li class="menu-item"><a href="#offsale" class="menu-link"><i class="fa-solid fa-tag"></i> Ofertas</a></li>
                 <li class="menu-item"><a href="#" class="menu-link"><i class="fa-solid fa-star"></i> Mas Vendidos</a></li>
-                <li class="menu-item"><a href="#" class="menu-link"><i class="fa-solid fa-ellipsis-vertical"></i> Categorias</a></li>
+                <li class="menu-item"><a href="#category" class="menu-link"><i class="fa-solid fa-ellipsis-vertical"></i> Categorias</a></li>
             </ul>
     </header>
     <section class="sliderProductos">
@@ -216,7 +247,7 @@
 
 
    </section>
-   <section class="offsale-container">
+   <section class="offsale-container" id="offsale">
     <div class="offsale-title">
         <h3 ><i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i> OFF SALE -35%! <i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i></h3>
     </div>
@@ -255,9 +286,9 @@
 
 
    </section>
-   <section class="category-container">
+   <section class="category-container" id="category">
     <div class="title-category">
-        <h3>Categorias</h3>
+        <h3>Categorías</h3>
     </div>
     <ul class="categories">
         <li class="categories-item"><a href="#" class="categories-link">
@@ -280,7 +311,30 @@
 
    </section>
 
-    
-    
+   <section class="contacto-container">
+    <div class="elementos-contacto">
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <i class="fa-solid fa-envelope"><p>facundoiba95@gmail.com</p></i>
+        <i class="fa-brands fa-whatsapp"><p>3513230038</p></i>
+        </div>
+        <div class="redes-contacto">
+            <h4>Redes</h4>
+            <div class="icons">
+                <a href="https://www.instagram.com/facundoiba_/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/FA.TDTNC"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="mapa">
+            <h4>Ubicación</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6807.446551468836!2d-64.18172034317877!3d-31.44928434494059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a380353f6649%3A0xec02c81a5950fd3b!2sClub%20Atl%C3%A9tico%20Talleres%20(C.A.T.)!5e0!3m2!1ses!2sar!4v1653583989169!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+    <footer>
+        <img src="./d9cc4a155f694f83b2d80d2150a2d2dc.png" alt="logo-eshopcba">
+    </footer>
 </body>
 </html>

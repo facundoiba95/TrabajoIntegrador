@@ -75,7 +75,10 @@
         width: 100%;
         z-index: 999;
         background-color: white;
+        overflow: hidden;
+        
     }
+   
     .menu-link{
         text-decoration: none;
     }
@@ -87,17 +90,65 @@
         transition: all 0.3s;  
     }
     .menu-item.infousuario{
-        padding:40px;
-        gap:20px;
         border-bottom: none;
+        width: 300%;
+        padding:0;
+        
     }
     .infousuario{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+       
     }
-    .child-one{
+    
+    .home{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        text-align: center;
     }
+    .home p{
+        width: 80%;
+    }
+    .login{
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+        text-align: center;
+        padding:8px;
+    }
+    
+
+    
+    .register{
+        width: 100%;
+        height: 150%;
+        border:1px solid red;
+        display: flex;
+        flex-direction: column;
+        padding:8px;
+        
+        
+    }
+    .register form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .register input{
+        height: 30px;
+    }
+
+
     .fa-solid.fa-user{
     font-size: 3rem;
     padding: 15px;
@@ -106,6 +157,7 @@
         display: flex;
         justify-content: center;
         gap:10px;
+        width: 80%;
     }
     .buttons-infousuario button{
         width: 150px;
@@ -144,7 +196,7 @@
         display: flex;
         align-items: center;
         width: 500%;
-        animation: cambioimagen 15s infinite alternate;
+        animation: cambioimagen 12s infinite alternate;
        
     }
     .sliderProductos li{
@@ -288,20 +340,36 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 80px;
+        gap: 30px;
      }
+     .category-container h3{
+        font-size: 1.4rem;
+     }
+     
+   
      .categories-link img{
         background-color:rgb(139, 203, 12);
-        border-radius: 50%;
+        border-radius: 6px;
         width: 80%;
         height: 250px;
         object-fit: contain;
+       
 
      }
      .categories{
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap:20px;
      }
+     .categories-link h4{
+        color: black;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+
+    }
+
 
      
      
@@ -312,9 +380,87 @@
 
 
 
-
+    /* EMPIEZA CONTACTO CONTAINER*/
+    .contacto-container{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(247, 246, 246);
+        margin-top: 80px;
+    }
+    .elementos-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:20px;
+        
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+    }
+    .contacto i {
+        display: flex;
+        gap:8px;
+        justify-content: center;
+    }
+    .redes-contacto{
+        display: flex; 
+        flex-direction: column;
+    }
+    .icons{
+        font-size: 1.4rem;
+    }
+    .fa-brands.fa-instagram:hover{
+        transition: all 0.3s;
+        transform: scale(1.2);
+        color:rgb(253, 86, 44);
+    }
+    .fa-brands.fa-facebook:hover{
+        transition: all 0.3s;
+        transform:  scale(1.2);
+        color:#3b5998;
+    }
+    .fa-brands.fa-twitter:hover{
+        transition: all 0.3s;
+        transform: scale(1.2);
+        color:#00acee;
+    }
+    .fa-brands.fa-youtube:hover{
+        transition: all 0.3s;
+        transform: scale(1.2);
+        color:rgb(225, 14, 14);
+    }
 
     
+    .mapa iframe{
+        width: 100%;
+       
+    }
+    .mapa h4{
+        margin-bottom: 5px;
+    }
+
+
+    /*****************/
+
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height:50px;
+    }
+    footer img{
+        width:40%;
+        height: 60%;
+        border-radius:3px;
+
+    }
+
 }
 @media (max-width:376px){
     /*MODIFICO SEARCH BAR HEADER*/
