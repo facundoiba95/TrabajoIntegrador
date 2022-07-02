@@ -39,7 +39,7 @@
     font-size:2rem;
     color:white;
 }
-@media (max-width:426px) {
+@media (min-width:320px) {
     /*MODIFICO LA SEARCH BAR DE HEADER*/
     .fa-solid.fa-magnifying-glass{
         display: none;
@@ -75,7 +75,9 @@
         width: 100%;
         z-index: 999;
         background-color: white;
-        overflow: hidden;
+        overflow:hidden;
+        height: 0;
+        transition: all  0.3s;
         
     }
    
@@ -87,65 +89,108 @@
         flex-direction: column;
         left:0; 
         top:70px;  
-        transition: all 0.3s;  
+        height: auto;
+       
+         
     }
+     
     .menu-item.infousuario{
         border-bottom: none;
         width: 300%;
-        padding:0;
-        
+        height: 100%;
+        padding:0;   
+          
     }
     .infousuario{
         display: flex;
         justify-content: center;
-        align-items: center;
-       
-       
-    }
+        align-items: center; 
+        
     
+    }
+   
     .home{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
+        
         text-align: center;
+        /* border:1px solid yellow; */
     }
     .home p{
         width: 80%;
     }
+    
     .login{
+        /* border:1px solid red; */
         width: 100%;
+        
         display: flex;
         flex-direction: column;  
+        align-items: center;
+        justify-content: center;
         text-align: center;
         padding:8px;
+        gap:0px;
+        transition: all 0.2s;  
+    }
+    
+   
+    .login form{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        gap:5px;
+    }
+    .login button{
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border:1px solid rgb(199, 195, 195);
     }
     
 
     
     .register{
+        /* border: 1px solid blue; */
         width: 100%;
-        height: 150%;
-        border:1px solid red;
         display: flex;
         flex-direction: column;
-        padding:8px;
-        
-        
+        padding:10px;
+       
     }
+    
     .register form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        
+        margin-top:13px;
+    }
+    .register h5{
+        text-align: center;
+        font-weight: 500;
+    }
+    .register h3{
+        text-align: center;
+        font-size: 1.5rem;
     }
     .register input{
+        width: 80%;
+        height: 25px;
+    }
+    .register button{
+        width: 150px;
         height: 30px;
+        border-radius: 5px;
+        border:1px solid rgb(199, 195, 195);
     }
 
 
@@ -160,10 +205,15 @@
         width: 80%;
     }
     .buttons-infousuario button{
-        width: 150px;
+        width: 140px;
         height: 30px;
         border-radius: 5px;
+        border:1px solid rgb(199, 195, 195);
         
+    }
+    .btnUser:target .login{
+      margin-left:-100%;
+      transition: all 0.3s;
     }
     .menu-item{
         padding:10px;
@@ -237,19 +287,15 @@
         flex-direction: column;
         border: 1px solid rgb(199, 195, 195);
         border-radius: 6px;
-
-    
     }
     .title-products{
         height: 40px;
         padding:8px;
         font-weight: 800;
-        border-bottom: ;
+        
         
 
     }
-    
-    
     .gallery-item{
         border-top: 1px solid rgb(199, 195, 195);
         border-left: none;
@@ -258,12 +304,11 @@
         padding:10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        
-        
+        justify-content: center;    
     }
     .gallery-link{
         display: flex;
+        height: 100%;
     }
     .gallery-link img{
         width:35%;
@@ -361,6 +406,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        margin:0 auto;
         gap:20px;
      }
      .categories-link h4{
@@ -369,16 +416,6 @@
         margin-bottom: 5px;
 
     }
-
-
-     
-     
-    
-
-
-
-
-
 
     /* EMPIEZA CONTACTO CONTAINER*/
     .contacto-container{
@@ -462,8 +499,75 @@
     }
 
 }
-@media (max-width:376px){
-    /*MODIFICO SEARCH BAR HEADER*/
-  
+@media (min-width: 481px) {
+    /*MODIFICO HEADER*/
+     
+   .buttons-infousuario button{
+    font-size: 1.2rem;
+    width: 200px;
+    height: 40px;
+   }
+   .home{
+    font-size: 1.7rem;
+   }
+   .login{
+    font-size:1.7rem;
+   }
+   .login button{
+    font-size: 1.2rem;
+    width: 200px;
+    height: 40px;
+   }
+   .register{
+    font-size:1.7rem;
+    
+   }
+   .register button{
+    margin-top:10px;
+    font-size: 1.2rem;
+    width: 200px;
+    height: 40px;
+   }
+   /*******************/
+
+    /*MODIFICO PRODUCTS CONTAINER*/
+    .description-product {
+        font-size: 1.4rem;
+    }
+    .title-products{
+        font-size: 1.5rem;
+    }
+    .gallery-item.mas{
+        font-size: 1.2rem;
+    }
+   /*********************/
+
+   /* MODIFICO GALLERY CONTAINER*/
+   .categories-link img{
+    width: 110%;
+   }
+
+   
+   .categories-item{
+    width: 100%;
+   }
+
+
+    
 }
+@media (min-width:769px){
+
+
+     /* MODIFICO HEADER*/
+     .redes{
+        display: flex;
+    }
+    .icons{
+        color:white;
+    }
+    /********************/
+
+
+}
+
 
