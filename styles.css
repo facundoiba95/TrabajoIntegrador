@@ -234,6 +234,66 @@
         text-align: center;
     }
 
+    /**********************/
+    /* EMPIEZA ACCOUNT CONTAINER*/
+  
+    
+    .nav-desktop{
+        justify-content: space-between;
+        
+       
+        
+    }
+    
+    .fa-solid.fa-user{
+        color:white;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        position:relative;
+        right: 200%;
+        
+    }
+    
+    .menu-user{
+        display: none;
+        
+        width: 100%; 
+        position: absolute; 
+        left:0;
+        margin-top:-5px;
+        background-color: rgb(247, 246, 246);
+        
+        
+
+    }
+    .item{
+        
+        width: 100%;
+        /* border: 1px solid red; */
+       
+        
+    }
+    #account{
+        display: none;
+    }
+    #account:checked ~ .menu-user{
+        display: flex;
+        
+    }
+   
+    #logindos{
+        display:none
+    }
+    #registerdos{
+        display: none;
+    }
+    #btnUserdos:focus  #logindos{
+        display: block;
+         
+     }
+
+
+
     /* EMPIEZO SLIDER PRODUCTOS*/
     .sliderProductos{
         overflow: hidden;
@@ -246,17 +306,27 @@
         
     }
     .sliderProductos ul{
-        background-color: rgb(139, 203, 12);
+        background-color: white;
         list-style: none;
         display: flex;
         align-items: center;
         width: 500%;
         animation: cambioimagen 12s infinite alternate;
+        
        
     }
     .sliderProductos li{
         width: 100%;
     } 
+    .overlay{
+        position:absolute;
+        top:0;
+        left: 50%;
+        margin-left:-25%;
+        text-align: center;
+        color: yellow;
+        font-size: 3rem;
+    }
     
     @keyframes cambioimagen {
         0%{ margin-left:0;}
@@ -277,6 +347,7 @@
       
 
     }
+
 /**************************/
 
 /** EMPIEZA PRODUCTS CONTAINER */
@@ -585,6 +656,15 @@
         font-size: 2rem;
     }
     /********************/
+
+    /* MODIFICO SLIDER */
+  
+    .sliderProductos img{
+        height: 400px;
+        object-fit: contain;
+       
+
+    }
     
 
 }
