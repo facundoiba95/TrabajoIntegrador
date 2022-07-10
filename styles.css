@@ -8,6 +8,9 @@
     font-family: "Plus Jakarta Sans";
     list-style: none;
 }
+html {
+    scroll-behavior:smooth;
+  }
 /** EMPIEZO LOS ELEMENTOS DEL HEADER*/
 .contacto-header{
     display: flex;
