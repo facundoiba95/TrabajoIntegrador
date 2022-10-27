@@ -1,4 +1,4 @@
-const urlBase = `http://localhost:3000/api`;
+const urlBase = `https://api-eshopcba.herokuapp.com/api`;
 
 const requestApi = async ()=> {
     try {
