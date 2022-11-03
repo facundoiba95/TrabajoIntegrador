@@ -23,7 +23,6 @@ const cart__subtotal= document.querySelector('.cart__subtotal')
 const btnAgregar = document.querySelector('.btnAgregar')
 const contadorCarrito = document.querySelector('.contador__carrito')
 const btnComprar = document.querySelector('.btnComprar')
-// const cart__bestSeller = document.querySelector('.cart__bestSeller}')
 
 
 //variables para USUARIOS
