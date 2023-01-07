@@ -64,7 +64,7 @@ const mostrarMenu = e => {
     menu__account.style.display="flex";
     home.style.display = "flex"
 }
-const cerrarMenu =e => {
+const cerrarMenu = e => {
     if(!e.target.classList.contains('fa-circle-xmark')) return
     menu__account.style.display="none"
 }

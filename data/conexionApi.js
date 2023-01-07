@@ -1,4 +1,4 @@
-const urlBase = `https://api-eshopcba.herokuapp.com/api`;
+const urlBase = `https://eshopcba-api-production.up.railway.app/api`;
 
 const requestApi = async ()=> {
     try {
