@@ -1,4 +1,4 @@
-const urlBase = `https://eshopcba-api-production.up.railway.app/api`;
+const urlBase = `https://eshopcba.onrender.com/api`;
 
 const requestApi = async ()=> {
     try {
